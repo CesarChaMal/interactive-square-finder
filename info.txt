@@ -1,4 +1,0 @@
-npm vite@latest interactive-square-finder
-cd interactive-square-finder 
-npm install
-npm run dev
