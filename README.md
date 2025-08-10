@@ -1,12 +1,76 @@
-# React + Vite
+# Interactive Square Finder – React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project implements an **interactive algorithm visualization** for detecting squares in a set of points, complete with live Java code walkthrough and rotation-matrix math explanations. Built using **React** and **Vite** for a fast, modern development experience.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Interactive board**: Step through point pairs and watch the algorithm in action.
+* **Live math panel**: Shows vector and rotation calculations for the current pair.
+* **Java code walkthrough**: Highlights each relevant line of code with math annotations.
+* **React + Vite**: Ultra-fast development server with Hot Module Replacement (HMR).
+* **ESLint rules** for clean, consistent code.
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# 1. Create the project using Vite
+npm create vite@latest interactive-square-finder --template react
+
+# 2. Enter the project folder
+cd interactive-square-finder
+
+# 3. Install dependencies
+npm install
+```
+
+## ▶️ Running the Project
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal (e.g., `http://localhost:5173`).
+
+## 📂 Project Structure
+
+```
+interactive-square-finder/
+│
+├── public/                                  # Static assets
+├── src/
+│   ├── App.jsx                               # Main React component
+│   ├── interactive_square_finder_live_demo_java_walkthrough.jsx  # Visualization logic
+│   ├── main.jsx                              # App entry point
+│   └── index.css                             # Global styles
+│
+├── package.json
+└── vite.config.js
+```
+
+> 💡 To use this demo: Replace the contents of `src/App.jsx` with your `interactive_square_finder_live_demo_java_walkthrough.jsx` file, or import it into `App.jsx`.
+
+## ⚙️ Framework & Plugins
+
+Two official Vite React plugins are available:
+
+* **[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react)** – Uses **Babel** for Fast Refresh.
+* **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)** – Uses **SWC** for faster builds.
+
+## 📜 ESLint
+
+Run lint checks to ensure code consistency:
+
+```bash
+npm run lint
+```
+
+## 📖 Learn More
+
+* [Vite Documentation](https://vitejs.dev/)
+* [React Documentation](https://react.dev/)
+* [ESLint Documentation](https://eslint.org/)
+
+---
+
+With this setup, you can explore the **Interactive Square Finder** and fully understand the geometry, math, and code involved in detecting squares.
+
