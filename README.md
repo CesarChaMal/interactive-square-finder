@@ -73,4 +73,3 @@ npm run lint
 ---
 
 With this setup, you can explore the **Interactive Square Finder** and fully understand the geometry, math, and code involved in detecting squares.
-
